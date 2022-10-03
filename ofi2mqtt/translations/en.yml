@@ -1,0 +1,24 @@
+---
+
+configuration:
+  OFI_SERIAL:
+    name: OFI Serial Number
+    description: OFI Serial Number (format 01000000XXXXXX)
+  MQTT_HOST:
+    name: Mqtt host
+    description: Mqtt host (optional, localhost by default)
+  MQTT_USER:
+    name: Mqtt user name
+    description: Mqtt user name (optional, only when authentication is enabled)
+  MQTT_PASSWORD:
+    name: Mqtt password
+    description: Mqtt password (optional, only when authentication is enabled)
+  MQTT_PORT:
+    name: Mqtt port
+    description: Mqtt port (optional, 1883 by default)
+  MQTT_SSL:
+    name: Mqtt SSL enabled?
+    description: Is SSL enabled othe MQTT broker? (optional, by default false)
+  log_level:
+    name: Log level
+    description: Log level (optional, by default info)

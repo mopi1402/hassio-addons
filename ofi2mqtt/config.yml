@@ -1,0 +1,37 @@
+---
+
+########## GENERAL SETTINGS ######################################################################################################
+name: ofi2mqtt
+image: mopi1402/ofi2mqtt
+version: 1.0.0
+slug: ofi2mqtt
+description: ASAMGO/CCEI OFI to MQTT Bridge
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+url: https://github.com/mopi1402/ofi2mqtt.git
+services:
+  - mqtt:need
+
+########## DEFAULT OPTIONS #######################################################################################################
+options:
+  OFI_SERIAL: 01000000XXXXXX
+  MQTT_HOST: homeassistant
+  MQTT_USER: ''
+  MQTT_PASSWORD: ''
+  MQTT_PORT: 1883
+  MQTT_SSL: false
+  log_level: info
+
+########## OPTIONS SCHEMA ########################################################################################################
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  OFI_SERIAL: match(^01000000.*$)
+  MQTT_HOST: str?
+  MQTT_USER: str?
+  MQTT_PASSWORD: password?
+  MQTT_PORT: port?
+  MQTT_SSL: bool?
