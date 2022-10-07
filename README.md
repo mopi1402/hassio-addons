@@ -14,6 +14,7 @@ Mopi1402 hass.io add-ons repository.
 
 ### How to install an add-on?
 
+> [**Install hydrao2mqtt**](hydrao2mqtt/README.md)  
 > [**Install ofi2mqtt**](ofi2mqtt/README.md)
 
 ## Contact & Support

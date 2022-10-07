@@ -1,0 +1,36 @@
+---
+
+########## GENERAL SETTINGS ######################################################################################################
+name: hydrao2mqtt
+image: mopi1402/hydrao2mqtt
+version: 1.0.0
+slug: hydrao2mqtt
+description: HYDRAO to MQTT Bridge
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+url: https://github.com/mopi1402/hydrao2mqtt.git
+services:
+  - mqtt:need
+
+########## DEFAULT OPTIONS #######################################################################################################
+options:
+  HYDRAO_MAC_ADDRESS: 00:00:00:00:00:00
+  MQTT_HOST: localhost
+  MQTT_USER: ''
+  MQTT_PASSWORD: ''
+  MQTT_PORT: 1883
+  log_level: info
+
+########## OPTIONS SCHEMA ########################################################################################################
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  HYDRAO_MAC_ADDRESS: match(^([0-9A-Fa-f]{2}[-:]){5}[0-9A-Fa-f]{2}$)
+  MQTT_HOST: str?
+  MQTT_USER: str?
+  MQTT_PASSWORD: password?
+  MQTT_PORT: port?
+  MQTT_SSL: bool?

@@ -1,0 +1,21 @@
+---
+
+configuration:
+  HYDRAO_MAC_ADDRESS:
+    name: Hydrao Mac Address
+    description: Hydrao Mac Address (format 00:00:00:00:00)
+  MQTT_HOST:
+    name: Mqtt host
+    description: Mqtt host (optional, localhost by default)
+  MQTT_USER:
+    name: Mqtt user name
+    description: Mqtt user name (optional, only when authentication is enabled)
+  MQTT_PASSWORD:
+    name: Mqtt password
+    description: Mqtt password (optional, only when authentication is enabled)
+  MQTT_PORT:
+    name: Mqtt port
+    description: Mqtt port (optional, 1883 by default)
+  log_level:
+    name: Log level
+    description: Log level (optional, by default info)

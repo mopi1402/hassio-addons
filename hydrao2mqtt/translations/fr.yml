@@ -1,0 +1,21 @@
+---
+
+configuration:
+  HYDRAO_MAC_ADDRESS:
+    name: Adresse Mac d'Hydrao
+    description: Adresse Mac du pommeau de douche Hydrao de série d'OFI (format 00:00:00:00:00)
+  MQTT_HOST:
+    name: Adresse du serveur MQTT
+    description: Adresse du serveur MQTT (optionnel, localhost par défaut)
+  MQTT_USER:
+    name: Nom d'utilisateur du serveur MQTT
+    description: Nom d'utilisateur du serveur MQTT (optionnel, uniquement si l'authentification est activée)
+  MQTT_PASSWORD:
+    name: Mot de passe su serveur MQTT
+    description: Mot de passe du serveur MQTT (optionnel, uniquement si l'authentification est activée)
+  MQTT_PORT:
+    name: Port du serveur MQTT
+    description: Port du serveur MQTT (optionnel, 1883 par défaut)
+  log_level:
+    name: Niveau de log
+    description: Niveau de log (optionnel, par défaut info)
